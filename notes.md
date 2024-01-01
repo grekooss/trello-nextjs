@@ -136,3 +136,33 @@ export default MarketingLayout;
     });
   }
   ```
+
+# GITHub
+
+## założyć repo
+
+```
+git init
+git add .
+git commit -m "marketing page"
+git branch -M main
+git remote add origin https://github.com/grekooss/trello-nextjs.git
+git push -u origin main
+```
+
+## przegladanie i dodawanie pod okreslona nazwa repo
+
+https://git-scm.com/book/pl/v2/Podstawy-Gita-Praca-ze-zdalnym-repozytorium
+
+```
+git remote -v
+git remote add pb https://github.com/paulboone/ticgit
+```
+
+## klonowanie
+
+```
+git clone https://github.com/grekooss/trello-nextjs.git
+
+npm i
+```
