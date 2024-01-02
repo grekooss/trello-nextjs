@@ -49,10 +49,17 @@ Pluginy do VSC:
 
 # Shadcn
 
+## instalacja
+
 - npx shadcn-ui@latest init
   - -> Y -> Default -> Neutral Enter -> Y -> tab zmien na .ts -> Enter -> Enter -> Y
   * dodaje sie funkcja "cn" w lib/utils.ts do łaczenia class tailwind z reszta
     i nadgralo tailwind.config.ts
+
+## uzywanie
+
+- dodaje sie biblioteka lucide-react i tam jest {Medal}
+- npx shadcn-ui@latest add button (laduje w components/ui/button.tsx)
 
 ## globals.css
 
@@ -117,6 +124,8 @@ const MarketingLayout = ({
 export default MarketingLayout;
 ```
 
+- katalogi **underscore (marketing)/\_components** - kompletne wykluczenie z Routera
+
 - route API <br>
 
   - app/users/route.ts
@@ -165,4 +174,39 @@ git remote add pb https://github.com/paulboone/ticgit
 git clone https://github.com/grekooss/trello-nextjs.git
 
 npm i
+```
+
+# Import czcionek
+
+```
+import { cn } from '@/lib/utils';
+
+import localFont from 'next/font/local';
+
+const headingFont = localFont({
+  src: '../../public/fonts/font.woff2',
+});
+
+      <div
+        className={cn(
+          'flex flex-col items-center justify-center',
+          headingFont.className
+        )}
+      >
+```
+
+```
+import { Poppins } from 'next/font/google';
+
+const textFont = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+
+      <div
+        className={cn(
+          'mx-auto mt-4 max-w-xs text-center text-sm text-neutral-400 md:max-w-2xl md:text-xl',
+          textFont.className
+        )}
+      >
 ```
