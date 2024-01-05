@@ -179,8 +179,10 @@ npm i
 ## branch
 
 ```
-git branch authentication
-git checkout authentication
+git branch authentication - tworzenie brancha
+git checkout authentication - zmiana brancha
+git checkout main
+git merge authentication - dolaczenie brancha authe do main
 ```
 
 # IMPORT czcionek
