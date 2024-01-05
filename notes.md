@@ -342,3 +342,11 @@ const ProtectedPage = () => {
 
 export default ProtectedPage;
 ```
+
+# Sidebar
+
+- stworzenie komponentu OrgControl w celu zmiany organizacji przez zmiane url
+- npm i usehooks-ts
+- npx shadcn-ui@latest add skeleton
+- npx shadcn-ui@latest add accordion
+- npx shadcn-ui@latest add seperator
