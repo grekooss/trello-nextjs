@@ -183,6 +183,7 @@ git branch authentication - tworzenie brancha
 git checkout authentication - zmiana brancha
 git checkout main
 git merge authentication - dolaczenie brancha authe do main
+git fetch origin sidebar - pobiranie branch gdy nie widzi
 ```
 
 # IMPORT czcionek
