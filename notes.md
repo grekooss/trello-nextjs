@@ -25,6 +25,8 @@ CTRL+SHIFT+P - reload
 
 - npm run lint
 
+  poprawka w tsconfig.json z bundler na node
+
 Pluginy do VSC:
 
 - ESLint - Microsoft
